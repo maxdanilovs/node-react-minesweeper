@@ -1,0 +1,95 @@
+@function set-text-color($mine) {
+  @if($mine == 1) {
+    @return #0074D9;
+  } @else if ($mine == 2) {
+    @return #138A36;
+  } @else if ($mine == 3) {
+    @return #FF4136;
+  } @else if ($mine == 4) {
+    @return #001f3f;
+  } @else if ($mine == 5) {
+    @return #85144b;
+  } @else if ($mine == 6) {
+    @return #3D9970;
+  } @else if ($mine == 7) {
+    @return #B10DC9;
+  } @else {
+    @return #AAAAAA;
+  }
+}
+
+.minesweeper {
+  margin: 0 auto;
+}
+
+.minesweeper td {
+  width: 40px;
+  height: 40px;
+}
+
+.minesweeper span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  display: block;
+  width: 95%;
+  height: 95%;
+  background-size: cover;
+  border-radius: 2px;
+  transition: all .15s ease-in-out;
+}
+
+.mines-unopened {
+  cursor: pointer;
+  background-image: linear-gradient(rgb(14,137,182) 0%, rgb(22,179,236) 100%);
+  box-shadow: inset 0px 1px 0px #2ab7ec, 0px 3px 0px 0px #07526e, 0px 5px 3px rgba(0,0,0,0.7);
+  &:active {
+    top:3px;
+    box-shadow: inset 0px 1px 0px #2ab7ec, 0px 2px 0px 0px #07526e, 0px 3px 1px rgba(0,0,0,0.7);
+  }
+}
+
+.mines-0 {
+  background-color: #eee;
+  box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.4), 0px 0px 1px 2px rgba(0,0,0,0.7);
+}
+
+.flagged {
+  background-image: url('../images/flag.png');
+  background-color: #ffb347;
+  box-shadow: inset 0px 1px 0px #ffcc33, 0px 3px 0px 0px #af8e2a, 0px 5px 3px rgba(0,0,0,0.7);
+  cursor: pointer;
+}
+
+.mines-mine {
+  background-image: url('../images/mine.png');
+  background-color: #eee;
+  box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.4), 0px 0px 1px 2px rgba(0,0,0,0.7);
+}
+
+$mines: (1, 2, 3, 4, 5, 6, 7, 8);
+
+@each $mine in $mines {
+  .mines-#{$mine} {
+  position: relative;
+  background-color: #eee;
+  box-shadow: inset 0px 0px 5px 2px rgba(0,0,0,0.4), 0px 0px 1px 2px rgba(0,0,0,0.7);
+  &:before {
+    position: absolute;
+    display: block;
+    content: '#{$mine}';
+    top: -2px;
+    @if ($mine == 1) {
+      left: 13px;
+    } @else {
+      left: 10px;
+    }
+    font-size: 35px;
+    color: set-text-color($mine);
+  }
+}
+}
+
+.red {
+  background-color: #FF4136;
+}
+

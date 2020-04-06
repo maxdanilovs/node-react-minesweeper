@@ -1,0 +1,46 @@
+.timer-counter {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 20px auto;
+  max-width: 400px;
+  height: 45px;
+}
+
+.tc-display {
+  flex: 1;
+  text-align: center;
+  width: 120px;
+  height: 40px;
+  margin: 0;
+  color:#eee;
+  display: flex;
+  justify-content: center;
+  p {
+    margin: 0 5px;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 35px;
+    cursor: default;
+  }
+  img {
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+  }
+  .clock {
+    filter: invert(80%);
+  }
+}
+
+.emoji {
+  width: 48px;
+  height: 48px;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: transform .15s ease;
+  &:hover {
+    transform: scale(1.05);
+  }
+}

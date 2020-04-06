@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.81236629.chunk.css",
+    "main.js": "/static/js/main.f29307af.chunk.js",
+    "main.js.map": "/static/js/main.f29307af.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9739e6da.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9739e6da.js.map",
+    "static/js/2.8efccb7d.chunk.js": "/static/js/2.8efccb7d.chunk.js",
+    "static/js/2.8efccb7d.chunk.js.map": "/static/js/2.8efccb7d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.e3d7cee0486248bd5d5f4813427eff54.js": "/precache-manifest.e3d7cee0486248bd5d5f4813427eff54.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.81236629.chunk.css.map": "/static/css/main.81236629.chunk.css.map",
+    "static/js/2.8efccb7d.chunk.js.LICENSE.txt": "/static/js/2.8efccb7d.chunk.js.LICENSE.txt",
+    "static/media/clock.png": "/static/media/clock.5e80d465.png",
+    "static/media/minesweeper.scss": "/static/media/flag.a0ae3722.png",
+    "static/media/minesweeper_logo.png": "/static/media/minesweeper_logo.95751f94.png",
+    "static/media/sad.png": "/static/media/sad.2d09f7da.png",
+    "static/media/smile.png": "/static/media/smile.0cc72ca4.png",
+    "static/media/sunglasses.png": "/static/media/sunglasses.39c83107.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9739e6da.js",
+    "static/js/2.8efccb7d.chunk.js",
+    "static/css/main.81236629.chunk.css",
+    "static/js/main.f29307af.chunk.js"
+  ]
+}
