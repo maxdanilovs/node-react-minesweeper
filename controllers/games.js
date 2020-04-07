@@ -65,7 +65,7 @@ const handleLeftClick = (req, res) => {
     if (sField.mine) {
         curGame.gameStatus = -1;
     } else {
-        gameStatus = checkGameStatus(curGame.board, curGame.boardParams.mines);
+        curGame.gameStatus = checkGameStatus(curGame.board, curGame.boardParams.mines);
     }
 
     // Response
