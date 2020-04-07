@@ -18,8 +18,9 @@ app.use(session({
     saveUninitialized: true
 }))
 
-const mongoUri = process.env.mongoUri;
-mongoose.connect(mongoUri, { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true })
+// const config = require('./config/config');
+const db = process.env.mongoUri;
+mongoose.connect(db, { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true })
 .then(() => console.log('MongoDB connected...'))
 .catch(err => console.log(err));
 
